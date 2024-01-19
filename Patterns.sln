@@ -5,7 +5,9 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Patterns.Strategy", "Patterns.Strategy\Patterns.Strategy.csproj", "{4762EAB9-BE80-4ABB-8876-B7E20B10DFFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.TemplateMethod", "Patterns.TemplateMethod\Patterns.TemplateMethod.csproj", "{B8CDCE78-2841-4588-9499-32D4E428ABEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Patterns.TemplateMethod", "Patterns.TemplateMethod\Patterns.TemplateMethod.csproj", "{B8CDCE78-2841-4588-9499-32D4E428ABEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.Mediator", "Patterns.Mediator\Patterns.Mediator.csproj", "{28DC2AA5-6EC3-49DA-8088-CCBFF784493A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B8CDCE78-2841-4588-9499-32D4E428ABEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8CDCE78-2841-4588-9499-32D4E428ABEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8CDCE78-2841-4588-9499-32D4E428ABEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28DC2AA5-6EC3-49DA-8088-CCBFF784493A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28DC2AA5-6EC3-49DA-8088-CCBFF784493A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28DC2AA5-6EC3-49DA-8088-CCBFF784493A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28DC2AA5-6EC3-49DA-8088-CCBFF784493A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
