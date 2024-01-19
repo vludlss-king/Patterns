@@ -1,4 +1,4 @@
-﻿using Patterns.Strategy.Enums;
+﻿using Patterns.Strategy.Contracts;
 using Patterns.Strategy.Impl;
 
 namespace Patterns.Strategy
@@ -7,20 +7,17 @@ namespace Patterns.Strategy
     {
         static void Main(string[] args)
         {
-            Console.Write("Выберите тип логгирования 1 - красный, 2 - синий: ");
+            IStrategy strategyA = new ConcreteStrategyA();
+            IStrategy strategyB = new ConcreteStrategyB();
+            IStrategy strategyC = new ConcreteStrategyC();
 
-            var input = Console.ReadLine();
-            var type = (LoggerType)Convert.ToInt32(input);
+            Context contextA = new Context(strategyA);
+            Context contextB = new Context(strategyB);
+            Context contextC = new Context(strategyC);
 
-            var context = type switch
-            {
-                LoggerType.Red => new LoggerContext(new RedLogWriter()),
-                LoggerType.Blue => new LoggerContext(new BlueLogWriter()),
-                _ => throw new ArgumentException(nameof(type))
-            };
-            context.WriteLog("Выведен лог");
-
-            Console.ReadKey();
+            contextA.ExecuteStrategy();
+            contextB.ExecuteStrategy();
+            contextC.ExecuteStrategy();
         }
     }
 }
